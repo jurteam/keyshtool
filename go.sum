@@ -1,0 +1,6 @@
+github.com/hashicorp/vault v1.14.0 h1:c+ujeY6SP/6xFF7dn1tfMhn5JPbRntX6lpIaoRUR6LM=
+github.com/hashicorp/vault v1.14.0/go.mod h1:bVRLXpE3TF0NgB/t2pJyox1n7dhtqbsZ5G19G0gpLRw=
+golang.org/x/sys v0.9.0 h1:KS/R3tvhPqvJvwcKfnBHJwwthS11LRhmM5D59eEXa0s=
+golang.org/x/sys v0.9.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/term v0.9.0 h1:GRRCnKYhdQrD8kfRAdQ6Zcw1P0OcELxGLKJvtjVMZ28=
+golang.org/x/term v0.9.0/go.mod h1:M6DEAAIenWoTxdKrOltXcmDY3rSplQUkrvaDU5FcQyo=

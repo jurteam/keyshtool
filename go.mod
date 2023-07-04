@@ -1,4 +1,4 @@
-module github.com/alessio/keyshtool
+module github.com/jurteam/keyshtool
 
 go 1.20
 

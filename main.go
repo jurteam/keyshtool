@@ -18,22 +18,33 @@ var (
 	partsFlag     int    = 3
 	fileFlag      string = "-"
 	outputDirFlag string = ""
-	stdinFlag            = false
-	thresholdFlag int    = 2
+	helpMode      bool
+	thresholdFlag int = 2
 )
 
 func init() {
 	flag.StringVar(&fileFlag, "f", "-", "read the secret from file instead of STDIN")
 	flag.IntVar(&partsFlag, "parts", 3, "number of shares")
+	flag.BoolVar(&helpMode, "help", false, "display this help and exit.")
 	flag.StringVar(&outputDirFlag, "output", "CURDIR", "output directory (must not exist)")
 	flag.IntVar(&thresholdFlag, "threshold", 2, "minimum number of shares required to reconstruct the secret")
+	flag.Usage = usage
+	flag.ErrHelp = nil
 }
 
 func main() {
+	log.SetFlags(0)
+	log.SetPrefix("keyshtool: ")
+	log.SetOutput(os.Stderr)
 	flag.Parse()
 
+	if helpMode {
+		usage()
+		return
+	}
+
 	if flag.NArg() < 1 {
-		log.Fatal("invalid arguments")
+		log.Fatal("invalid command")
 	}
 
 	switch cmd := flag.Arg(0); cmd {
@@ -53,6 +64,13 @@ func main() {
 	default:
 		log.Fatal("invalid command")
 	}
+}
+
+func usage() {
+	fmt.Fprintln(os.Stderr, "Usage: keyshtool [OPTION]... COMMAND")
+	fmt.Fprintln(os.Stderr, "Commands: combine split")
+
+	flag.PrintDefaults()
 }
 
 func split() error {

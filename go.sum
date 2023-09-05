@@ -1,5 +1,5 @@
-github.com/hashicorp/vault v1.14.0 h1:c+ujeY6SP/6xFF7dn1tfMhn5JPbRntX6lpIaoRUR6LM=
-github.com/hashicorp/vault v1.14.0/go.mod h1:bVRLXpE3TF0NgB/t2pJyox1n7dhtqbsZ5G19G0gpLRw=
+github.com/hashicorp/vault v1.14.2 h1:wgJSMMGlBpJcUR/L7F7/OkK8E3/nzXo5mCtJtNh6pIU=
+github.com/hashicorp/vault v1.14.2/go.mod h1:9JtUETMikpprXcdwRssyxRVKyON/9jZ2fAcwQPt5ItE=
 golang.org/x/sys v0.12.0 h1:CM0HF96J0hcLAwsHPJZjfdNzs0gftsLfgKt57wWHJ0o=
 golang.org/x/sys v0.12.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.12.0 h1:/ZfYdc3zq+q02Rv9vGqTeSItdzZTSNDmfTi0mBAuidU=

@@ -3,7 +3,7 @@ module github.com/jurteam/keyshtool
 go 1.20
 
 require (
-	github.com/hashicorp/vault v1.14.3
+	github.com/hashicorp/vault v1.14.8
 	golang.org/x/term v0.15.0
 )
 
